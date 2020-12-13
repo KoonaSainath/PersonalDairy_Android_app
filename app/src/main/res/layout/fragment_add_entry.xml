@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <TextView
+        android:id="@+id/txt_add_entry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter a new entry to your dairy"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_margin="16dp" />
+
+    <EditText
+        android:id="@+id/edt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:padding="16dp"
+        android:hint="Enter title for your new entry"
+        android:gravity="center"
+        android:textColorHint="@color/secondaryColor"
+        android:background="@drawable/edit_text_style"
+        android:inputType="textCapWords"
+        android:layout_below="@id/txt_add_entry"/>
+
+    <EditText
+        android:id="@+id/edt_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="Description"
+        android:textColorHint="@color/secondaryDarkColor"
+        android:gravity="center"
+        android:background="@drawable/edit_text_style"
+        android:padding="16dp"
+        android:inputType="textMultiLine|textCapSentences"
+        android:layout_below="@id/edt_title"/>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_description"
+        android:layout_margin="16dp"
+        android:padding="16dp"
+        android:text="S A V E"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+
+</RelativeLayout>
+</ScrollView>
